@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@mail.com",
+      "password": "123456",
+      "role": "admin"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Budi Santoso",
+      "phone": "082331603633",
+      "email": "budisantoso@gmail.com",
+      "id": "1"
+    },
+    {
+      "id": "4d4f",
+      "name": "Andi",
+      "phone": "0811111111",
+      "email": "andi@mail.com"
+    },
+    {
+      "id": "0b68",
+      "name": "Mahardika",
+      "phone": "081234567890",
+      "email": "mahardika@mail.com"
+    },
+    {
+      "id": "43c4",
+      "name": "Ari Laksana",
+      "phone": "082338453246",
+      "email": "Arilaksana09@gmail.com"
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "name": "10GB",
+      "price": 50000,
+      "duration": "30 Hari"
+    },
+    {
+      "id": "2",
+      "name": "25GB",
+      "price": 100000,
+      "duration": "30 Hari"
+    }
+  ],
+  "transactions": [
+    {
+      "customerId": "0b68",
+      "packageId": "2",
+      "transactionDate": "2026-02-04T17:00:00.000Z",
+      "id": "1"
+    },
+    {
+      "id": "94bf",
+      "customerId": "1",
+      "packageId": "1",
+      "transactionDate": "2026-02-11T17:00:00.000Z"
+    },
+    {
+      "id": "336a",
+      "customerId": "4d4f",
+      "packageId": "1",
+      "transactionDate": "2026-02-01T17:00:00.000Z"
+    },
+    {
+      "id": "4b49",
+      "customerId": "43c4",
+      "packageId": "2",
+      "transactionDate": "2026-01-29T17:00:00.000Z"
+    }
+  ]
+}

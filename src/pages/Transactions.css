@@ -1,0 +1,722 @@
+.transactions-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+:root[data-theme="dark"] .transactions-page {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.transactions-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  padding: 24px 24px 32px 24px;
+}
+
+:root[data-theme="dark"] .transactions-content {
+  background: #1a1a1a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.transactions-header h1 {
+  margin: 0 0 4px 0;
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.transactions-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+:root[data-theme="dark"] .transactions-header h1 {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .transactions-header p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.add-transaction-button {
+  background-color: #355fdc;
+  color: white;
+}
+
+/* Table Styling */
+:root[data-theme="dark"] .ant-table {
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-table-thead > tr > th {
+  background: #262626;
+  color: rgba(255, 255, 255, 0.87);
+  border-color: #434343;
+}
+
+:root[data-theme="dark"] .ant-table-tbody > tr > td {
+  border-color: #434343;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-table-tbody > tr:hover > td {
+  background: #262626;
+}
+
+/* Pagination Styling */
+:root[data-theme="dark"] .ant-table-pagination {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-pagination-item {
+  background: #262626;
+  border-color: #434343;
+}
+
+:root[data-theme="dark"] .ant-pagination-item a {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-pagination-item-active {
+  background: #355fdc;
+  border-color: #355fdc;
+}
+
+:root[data-theme="dark"] .ant-pagination-item-active a {
+  color: white;
+}
+
+/* Button Link Styling */
+:root[data-theme="dark"] .ant-btn-link {
+  color: #355fdc;
+}
+
+:root[data-theme="dark"] .ant-btn-link:hover {
+  color: #4a6fff;
+}
+
+:root[data-theme="dark"] .ant-btn-link-dangerous {
+  color: #ff4d4f;
+}
+
+:root[data-theme="dark"] .ant-btn-link-dangerous:hover {
+  color: #ff7875;
+}
+
+/* Modal Light Theme */
+:root[data-theme="light"] .ant-modal-content {
+  background: #ffffff;
+  border-color: #d9d9d9;
+}
+
+:root[data-theme="light"] .ant-modal-header {
+  background: #ffffff;
+  border-color: #d9d9d9;
+  padding: 16px 24px;
+}
+
+:root[data-theme="light"] .ant-modal-title {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+:root[data-theme="light"] .ant-modal-close-x {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 16px;
+}
+
+:root[data-theme="light"] .ant-modal-close-x:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+:root[data-theme="light"] .ant-modal-body {
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 24px;
+}
+
+:root[data-theme="light"] .ant-modal-footer {
+  background: #ffffff;
+  border-color: #d9d9d9;
+  padding: 10px 16px;
+}
+
+/* Form Light Theme */
+:root[data-theme="light"] .ant-form-item {
+  margin-bottom: 24px;
+}
+
+:root[data-theme="light"] .ant-form-item-label > label {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+:root[data-theme="light"] .ant-form-item-label > label::after,
+:root[data-theme="light"] .ant-form-item-required::before {
+  color: #ff4d4f;
+}
+
+/* Select Light Theme */
+:root[data-theme="light"] .ant-select-selector {
+  background: #ffffff;
+  border-color: #d9d9d9;
+  color: #1a1a1a;
+}
+
+:root[data-theme="light"] .ant-select-selector:hover {
+  border-color: #40a9ff;
+}
+
+:root[data-theme="light"] .ant-select-focused .ant-select-selector {
+  border-color: #355fdc;
+  box-shadow: 0 0 0 2px rgba(53, 95, 220, 0.2);
+}
+
+:root[data-theme="light"] .ant-select-item-option {
+  color: #1a1a1a;
+}
+
+:root[data-theme="light"] .ant-select-item-option-selected {
+  background: #f5f5f5;
+}
+
+/* DatePicker Light Theme */
+:root[data-theme="light"] .ant-picker {
+  background: #ffffff;
+  border-color: #d9d9d9;
+  color: #1a1a1a;
+}
+
+:root[data-theme="light"] .ant-picker:hover {
+  border-color: #40a9ff;
+}
+
+:root[data-theme="light"] .ant-picker-focused {
+  border-color: #355fdc;
+  box-shadow: 0 0 0 2px rgba(53, 95, 220, 0.2);
+}
+
+/* Button Light Theme */
+:root[data-theme="light"] .ant-btn-primary {
+  background: #355fdc;
+  border-color: #355fdc;
+  color: white;
+}
+
+:root[data-theme="light"] .ant-btn-primary:hover {
+  background: #4a6fff;
+  border-color: #4a6fff;
+  color: white;
+}
+
+:root[data-theme="light"] .ant-btn-primary:focus {
+  background: #355fdc;
+  border-color: #355fdc;
+  color: white;
+}
+
+:root[data-theme="light"] .ant-btn-default {
+  background: #ffffff;
+  border-color: #d9d9d9;
+  color: #1a1a1a;
+}
+
+:root[data-theme="light"] .ant-btn-default:hover {
+  background: #fafafa;
+  border-color: #40a9ff;
+  color: #1a1a1a;
+}
+
+:root[data-theme="light"] .ant-btn-default:focus {
+  background: #ffffff;
+  border-color: #355fdc;
+  color: #1a1a1a;
+}
+
+/* Error Light Theme */
+:root[data-theme="light"] .ant-form-item-explain-error {
+  color: #ff4d4f;
+  font-size: 12px;
+}
+
+:root[data-theme="light"] .ant-form-item-has-error .ant-select-selector {
+  border-color: #ff4d4f;
+}
+
+:root[data-theme="light"] .ant-form-item-has-error .ant-picker {
+  border-color: #ff4d4f;
+}
+
+/* Modal Dark Theme */
+:root[data-theme="dark"] .ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+:root[data-theme="dark"] .ant-modal-content {
+  background: #1a1a1a;
+  border-color: #434343;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.48), 0 6px 16px 0 rgba(0, 0, 0, 0.32), 0 9px 28px 8px rgba(0, 0, 0, 0.20);
+}
+
+:root[data-theme="dark"] .ant-modal-header {
+  background: #1a1a1a;
+  border-color: #434343;
+  padding: 16px 24px;
+  border-bottom: 1px solid #434343;
+}
+
+:root[data-theme="dark"] .ant-modal-title {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+:root[data-theme="dark"] .ant-modal-close {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+:root[data-theme="dark"] .ant-modal-close:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-modal-close-x {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+:root[data-theme="dark"] .ant-modal-close-x:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-modal-body {
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 24px;
+}
+
+:root[data-theme="dark"] .ant-modal-footer {
+  background: #1a1a1a;
+  border-color: #434343;
+  padding: 10px 16px;
+  border-top: 1px solid #434343;
+}
+
+/* Form Dark Theme */
+:root[data-theme="dark"] .ant-form-item {
+  margin-bottom: 24px;
+}
+
+:root[data-theme="dark"] .ant-form-item-label > label {
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 500;
+}
+
+:root[data-theme="dark"] .ant-form-item-label > label::after,
+:root[data-theme="dark"] .ant-form-item-required::before {
+  color: #ff4d4f;
+}
+
+:root[data-theme="dark"] .ant-form-item-explain {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+}
+:root[data-theme="dark"] .ant-form-item-control-input-content {
+  color: rgba(172, 167, 167, 0.87);
+}
+
+/* Select Dark Theme */
+:root[data-theme="dark"] .ant-select {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-selector {
+  background: #262626 !important;
+  border-color: #434343 !important;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-selector:hover {
+  border-color: #595959 !important;
+  background: #262626 !important;
+}
+
+:root[data-theme="dark"] .ant-select-focused .ant-select-selector {
+  border-color: #355fdc !important;
+  box-shadow: 0 0 0 2px rgba(53, 95, 220, 0.2) !important;
+  background: #262626 !important;
+}
+
+:root[data-theme="dark"] .ant-select-arrow {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+:root[data-theme="dark"] .ant-select-clear {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+:root[data-theme="dark"] .ant-select-clear:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-item-option {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-item-option-selected {
+  background: #333333;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-item-option:hover {
+  background: #333333;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-item-option-active {
+  background: #333333;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-dropdown {
+  background: #262626;
+}
+
+:root[data-theme="dark"] .ant-select-item {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+:root[data-theme="dark"] .ant-select-selection-search-input {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+:root[data-theme="dark"] .ant-select-selection-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Additional Select Placeholder Styling */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+:root[data-theme="dark"] .ant-select .ant-select-selector .ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Ant Design 5 Select Placeholder */
+:root[data-theme="dark"] .ant-select-multiple .ant-select-selection-placeholder,
+:root[data-theme="dark"] .ant-select-single .ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+:root[data-theme="dark"] .ant-select-multiple .ant-select-selection-item-placeholder,
+:root[data-theme="dark"] .ant-select-single .ant-select-selection-item-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Fallback for all placeholder text in select */
+:root[data-theme="dark"] .ant-select-selector span {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+:root[data-theme="dark"] .ant-select-selector span[title] {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Target placeholder specifically - Ant Design 5 */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-search {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-search-input {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Override inline styles for placeholder */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Placeholder when no value selected */
+:root[data-theme="dark"] .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Specific targeting for placeholder text */
+:root[data-theme="dark"] .ant-select-selector::after {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* For the actual placeholder span */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+  opacity: 1 !important;
+}
+
+/* Ultra-aggressive targeting for placeholder */
+:root[data-theme="dark"] .ant-select-selector span:not(.ant-select-arrow) {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* When placeholder is shown (no value) */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Ant Design Select placeholder text color override */
+:root[data-theme="dark"] .ant-select-selector {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Make sure placeholder text is visible */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+  display: inline-block !important;
+}
+
+/* For text inside selector when no value */
+:root[data-theme="dark"] .ant-select-selector > span {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Ensure all text in selector is visible */
+:root[data-theme="dark"] .ant-select-selector * {
+  color: inherit !important;
+}
+
+/* DatePicker Dark Theme */
+:root[data-theme="dark"] .ant-picker {
+  background: #262626 !important;
+  border-color: #434343 !important;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker:hover {
+  border-color: #595959 !important;
+  background: #262626 !important;
+}
+
+:root[data-theme="dark"] .ant-picker-focused {
+  border-color: #355fdc !important;
+  box-shadow: 0 0 0 2px rgba(53, 95, 220, 0.2) !important;
+  background: #262626 !important;
+}
+
+:root[data-theme="dark"] .ant-picker-input {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+:root[data-theme="dark"] .ant-picker-suffix {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+:root[data-theme="dark"] .ant-picker-panel {
+  background: #262626;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-header {
+  border-color: #434343;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-header-super-prev-btn,
+:root[data-theme="dark"] .ant-picker-header-prev-btn,
+:root[data-theme="dark"] .ant-picker-header-next-btn,
+:root[data-theme="dark"] .ant-picker-header-super-next-btn {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+:root[data-theme="dark"] .ant-picker-header-super-prev-btn:hover,
+:root[data-theme="dark"] .ant-picker-header-prev-btn:hover,
+:root[data-theme="dark"] .ant-picker-header-next-btn:hover,
+:root[data-theme="dark"] .ant-picker-header-super-next-btn:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-cell {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: #355fdc;
+  color: white;
+}
+
+:root[data-theme="dark"] .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: #355fdc;
+}
+
+:root[data-theme="dark"] .ant-picker-cell:hover:not(.ant-picker-cell-disabled):not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end) .ant-picker-cell-inner {
+  background: #333333;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-time-panel {
+  background: #262626;
+}
+
+:root[data-theme="dark"] .ant-picker-time-panel-column {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-time-panel-cell {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-picker-time-panel-cell:hover {
+  background: #333333;
+}
+
+:root[data-theme="dark"] .ant-picker-time-panel-cell-selected {
+  background: #355fdc;
+  color: white;
+}
+
+/* Button Dark Theme */
+:root[data-theme="dark"] .ant-btn-primary {
+  background: #355fdc;
+  border-color: #355fdc;
+  color: white;
+}
+
+:root[data-theme="dark"] .ant-btn-primary:hover {
+  background: #4a6fff;
+  border-color: #4a6fff;
+  color: white;
+}
+
+:root[data-theme="dark"] .ant-btn-primary:focus {
+  background: #355fdc;
+  border-color: #355fdc;
+  color: white;
+}
+
+:root[data-theme="dark"] .ant-btn-default {
+  background: #262626;
+  border-color: #434343;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-btn-default:hover {
+  background: #333333;
+  border-color: #595959;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-btn-default:focus {
+  background: #262626;
+  border-color: #355fdc;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Error Dark Theme */
+:root[data-theme="dark"] .ant-form-item-explain-error {
+  color: #ff7875;
+  font-size: 12px;
+}
+
+:root[data-theme="dark"] .ant-form-item-has-error .ant-select-selector {
+  border-color: #ff4d4f;
+}
+
+:root[data-theme="dark"] .ant-form-item-has-error .ant-picker {
+  border-color: #ff4d4f;
+}
+
+/* Popconfirm Dark Theme */
+:root[data-theme="dark"] .ant-popconfirm {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-popover-inner {
+  background: #262626;
+  border-color: #434343;
+}
+
+:root[data-theme="dark"] .ant-popover-inner-content {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .ant-popover-arrow-content {
+  background-color: #262626;
+  border-color: #434343;
+}
+
+/* Fix for selected value text visibility in dark theme */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item {
+  color: rgba(16, 16, 16, 0.87) !important;
+  background: transparent !important;
+}
+
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item-content {
+  color: rgba(35, 34, 34, 0.87) !important;
+}
+
+/* Ensure selected text is visible in selector */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item > span {
+  color: rgba(17, 16, 16, 0.87) !important;
+}
+
+/* Fix for when value is selected in select */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item-remove {
+  color: rgba(17, 16, 16, 0.87) !important;
+}
+
+/* Ensure all text in select selector is readable */
+:root[data-theme="dark"] .ant-select-selector {
+  color: rgba(20, 19, 19, 0.87) !important;
+}
+
+/* Override any inline styles that make text white on white */
+:root[data-theme="dark"] .ant-select-selector .ant-select-selection-item {
+  color: rgba(11, 11, 11, 0.87) !important;
+}
+
+@media (max-width: 768px) {
+  .transactions-page {
+    padding: 16px;
+  }
+
+  .transactions-content {
+    padding: 20px 16px 24px 16px;
+  }
+
+  .transactions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .transactions-header h1 {
+    font-size: 24px;
+  }
+}
