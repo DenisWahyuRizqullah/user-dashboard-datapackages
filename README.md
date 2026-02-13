@@ -2,6 +2,11 @@
 
 Dashboard admin untuk sistem e-commerce data package dengan integrasi React, Vite.
 
+## Waktu Pengerjaan
+
+**Start:** Jumat, 13 Fabruari 2026 4:00 PM
+**Finish:** Sabtu, 14 Februari 2026 8:00 AM
+
 ## Fitur Utama
 
 - 📊 **Dashboard Statistik** - Menampilkan total pelanggan, transaksi, pendapatan, dan paket
@@ -61,7 +66,7 @@ db.json              # Mock database (json-server)
 npm run dev
 
 # Terminal 2: Start json-server (optional)
-npx json-server --watch db.json --port 5000
+npx json-server --watch db.json --port 3001
 ```
 
 Aplikasi akan berjalan di `http://localhost:5173`
@@ -70,6 +75,13 @@ Aplikasi akan berjalan di `http://localhost:5173`
 
 - **Email:** admin@mail.com
 - **Password:** 123456
+
+## Dokumentasi Project
+
+![alt text](src\assets\Login.png)
+![alt text](src\assets\dashboard.png)
+![alt text](src\assets\customer.png)
+![alt text](src\assets\transaksi.png)
 
 ## License
 
