@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../services/api";
+import { useAuth } from "../context/AuthContext";
 import "./Login.css";
 
 function Login() {
@@ -9,6 +10,7 @@ function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,8 +28,9 @@ function Login() {
       );
 
       if (user) {
-        // Login berhasil, redirect ke dashboard
+        // Login berhasil, simpan user di AuthContext dan redirect ke dashboard
         console.log("Login berhasil:", user);
+        login(user);
         navigate("/dashboard");
       } else {
         // Login gagal
