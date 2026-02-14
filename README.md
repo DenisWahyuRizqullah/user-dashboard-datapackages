@@ -5,7 +5,7 @@ Dashboard admin untuk sistem e-commerce data package dengan integrasi React, Vit
 ## Waktu Pengerjaan
 
 **Start:** Jumat, 13 Fabruari 2026 4:00 PM
-**Finish:** Sabtu, 14 Februari 2026 8:00 AM
+**Finish:** Sabtu, 14 Februari 2026 9:32 AM
 
 ## Fitur Utama
 
@@ -53,6 +53,7 @@ src/
 ├── services/         # API service & business logic
 ├── context/          # React Context (Theme, Auth, dll)
 ├── assets/           # Static assets
+├── route/            # Route
 ├── App.jsx           # Main app component
 └── main.jsx          # Entry point
 
@@ -78,10 +79,11 @@ Aplikasi akan berjalan di `http://localhost:5173`
 
 ## Dokumentasi Project
 
-![alt text](src\assets\Login.png)
-![alt text](src\assets\dashboard.png)
-![alt text](src\assets\customer.png)
-![alt text](src\assets\transaksi.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/69c2d363ccaf19e0b4cb6c6c1cc910d4b363c040/src/assets/Login.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/69c2d363ccaf19e0b4cb6c6c1cc910d4b363c040/src/assets/dashboard.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/69c2d363ccaf19e0b4cb6c6c1cc910d4b363c040/src/assets/customer.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/69c2d363ccaf19e0b4cb6c6c1cc910d4b363c040/src/assets/transaksi.png)
+
 
 ## License
 
