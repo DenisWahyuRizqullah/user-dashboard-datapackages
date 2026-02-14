@@ -79,10 +79,10 @@ Aplikasi akan berjalan di `http://localhost:5173`
 
 ## Dokumentasi Project
 
-![alt text](src\assets\Login.png)
-![alt text](src\assets\dashboard.png)
-![alt text](src\assets\customer.png)
-![alt text](src\assets\transaksi.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/bc831ed9643f9c1ea3b147ce66f39d435aff8fac/src/assets/Login.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/bc831ed9643f9c1ea3b147ce66f39d435aff8fac/src/assets/dashboard.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/bc831ed9643f9c1ea3b147ce66f39d435aff8fac/src/assets/customer.png)
+![alt text](https://github.com/DenisWahyuRizqullah/user-dashboard-datapackages/blob/bc831ed9643f9c1ea3b147ce66f39d435aff8fac/src/assets/transaksi.png)
 
 ## License
 
